@@ -1,0 +1,87 @@
+Algoritmo "http://www.renatodevs.site/"
+// CRIE UM MENU CONTENDO
+//1 -SOMAR
+//2 -SUBTRAIR
+//3 -DIVIDIR
+//4 -MUTIPLICAR
+//5 -SAIR
+
+Var
+
+   I:INTEIRO
+   S1,S2,S3,S4:INTEIRO
+   RESULT,VALOR,SAIR:INTEIRO
+
+Inicio
+
+   ESCREVAL("####### MENU #######")
+   ESCREVAL //PULAR LINHA
+   ESCREVAL("DIGITE 1 PARA SOMAR.")
+   ESCREVAL("DIGITE 2 PARA SUBTRAIR.")
+   ESCREVAL("DIGITE 3 PARA DIVIDIR.")
+   ESCREVAL("DIGITE 4 PARA MULTIPLICAR.")
+   ESCREVAL("DIGITE 5 PARA SAIR.")
+
+   I <- 0
+   REPITA
+
+      SE (VALOR = 1) ENTAO
+         ESCREVAL("DIGITE O VALOR DESEJADO SOMAR:  ")
+         ESCREVA("SOMAR 1: ")
+         LEIA (RESULT)
+
+         ESCREVA("SOMAR 2: ")
+         LEIA (S1)
+         ESCREVA("RESULTADO: ", (RESULT + S1))
+      FIMSE
+
+      ESCREVAL // PULAR LINHA
+      ESCREVAL // PULAR LINHA
+      ESCREVA("DIGITE A OPÇÃO DESEJADA: ")
+      LEIA (VALOR)
+
+      //------------------------------------------
+
+      SE (VALOR = 2) ENTAO
+         ESCREVAL("DIGITE O VALOR DESEJADO SUBTRAIR:  ")
+         ESCREVA("SUBTRAIR 1: ")
+         LEIA (RESULT)
+
+         ESCREVA("SUBTRAIR 2: ")
+         LEIA (S2)
+         ESCREVA("RESULTADO: ", (RESULT - S2))
+      FIMSE
+
+      //------------------------------------------
+
+      SE (VALOR = 3) ENTAO
+         ESCREVAL("DIGITE O VALOR DESEJADO PARA DIVIDIR:  ")
+         ESCREVA("DIVIDIR 1: ")
+         LEIA (RESULT)
+
+         ESCREVA("DIVIDIR 2: ")
+         LEIA (S3)
+         ESCREVA("RESULTADO: ", (RESULT / S3))
+      FIMSE
+
+      //------------------------------------------
+
+      SE (VALOR = 4) ENTAO
+         ESCREVAL("DIGITE O VALOR DESEJADO PARA MULTIPLICAR:  ")
+         ESCREVA("MULTIPLICAR 1: ")
+         LEIA (RESULT)
+
+         ESCREVA("MULTIPLICAR 2: ")
+         LEIA (S4)
+         ESCREVA("RESULTADO: ", (RESULT * S4))
+      FIMSE
+
+      //------------------------------------------
+
+      SE (VALOR = 5) ENTAO
+         INTERROMPA
+      FIMSE
+
+   ATE I > VALOR = 5
+
+Fimalgoritmo
